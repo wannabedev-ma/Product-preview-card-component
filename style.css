@@ -23,6 +23,8 @@ body{
     background-color: #fff;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
 }
 img{
     max-width: 18.5rem;
