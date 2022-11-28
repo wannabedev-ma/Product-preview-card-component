@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100vw;
+    
+}
+.container{
+    max-width: 37rem;
+    max-height: 45rem;
+    display: flex;
+    background-color: #fff;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+img{
+    max-width: 18.5rem;
+    max-height: 45rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.title{
+    font-family: 'Fraunces', serif;
+    color: black;
+    margin: .8rem auto 1rem;
+}
+.info{
+    padding: 1.9rem;  
+}
+p{
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+.prices{
+    margin: 1.3rem auto;
+    display: flex;
+    align-items: center;
+}
+.newprice{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: #658354;
+    font-size: 2rem;
+}
+.oldprice{
+    text-decoration:line-through;
+    font-size: .7rem;
+    margin: 1rem;
+}
+button{
+    color: #fff;
+    background-color: #658354;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    font-size: .8rem;
+    border: none;
+    padding: .7rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+button:active{
+    background-color: #2f4125;
+}
+@media(max-width : 375px){
+    *{
+        margin: 1rem;
+    }
+    img{
+        max-width: 100%;
+        min-height: 30%;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        border-bottom-left-radius: 0;
+        margin: 0;
+    }
+    body{
+        height: auto;
+        width: auto;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: none;
+        margin: 10px 10px;
+        border-bottom-left-radius: .5rem;
+        
+    }
+    .info{
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+   .prices{
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-items:center;
+   }
+   .oldprice{
+    margin: 0;
+   }
+   button{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+   }
+   .title{
+    line-height: 2rem;
+   }
+   p{
+    line-height: 1.5rem;
+    width: 80vw;
+    margin: 0;
+   }
+
+}
